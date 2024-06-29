@@ -21,7 +21,7 @@ nav .navbar-nav .nav-link.active,
 nav .navbar-nav .show > .nav-link,
 nav .navbar-brand,
 nav .fa-solid {
-  color: #fff;
+  color: red;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
