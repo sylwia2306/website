@@ -8,12 +8,22 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: #444;
 	color: #fff;
+}
+
+.blue-text{
+	color: $main-color;
+}
+
+.shadow-bg{
+	background-color: rgba(0 0 0 .8);
 }
 
 nav {
 	text-transform: uppercase;
+	transition: .6s;
+	z-index: 1;
 
 	.navbar-toggler {
 		padding: 10px 15px;
@@ -37,4 +47,67 @@ nav {
 
 .hero-text{
     justify-content: center;
+}
+
+.hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+header.hero-img{
+	position: relative;
+	height: 100vh;
+	background-image: url(../img/gaming.small.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: $white;
+	z-index: 0;
+
+	h1{
+		text-transform: uppercase;
+	}
+
+	.hero-shadow{
+		position: absolute;
+		top: 0;left: 0;
+		width: 100%;height: 100%;
+		background-color: rgb(0,0,0,.8);
+		z-index: -5;
+	}
+	.hero-text{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.fa-chevron-down{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		bottom: 20px;
+		font-size: 30px;
+		color: $white;
+	}
+}
+	
+@media(min-width: 768px){
+	.hero-text{
+		h1{
+			font-size: 42px;
+		}
+
+		p{
+			font-size: 20px;
+		}
+	}
+}
+
+@media(min-width:1200px){
+	header.hero-img{
+		background-image: url(../img/gaming.big.jpg);
+	}
 }
