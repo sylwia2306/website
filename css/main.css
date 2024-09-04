@@ -6,8 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
-  color: #fff;
+  background-color: #333;
 }
 
 .blue-text {
@@ -15,22 +14,36 @@ body {
 }
 
 .shadow-bg {
-  background-color: rgba;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
 }
 
 nav {
   text-transform: uppercase;
-  top: 10px;
-  z-index: 1;
+  transition: 0.6s;
+  z-index: 5;
 }
 nav .navbar-toggler {
   padding: 10px 15px;
 }
+nav .navbar-brand {
+  font-weight: bold;
+}
 nav .nav-link,
-nav .navbar-nav .nav-link.active,
 nav .navbar-nav .show > .nav-link,
 nav .navbar-brand,
-nav .fa-solid {
+nav .fa-bars {
   color: #fff;
 }
 nav .nav-link:focus,
@@ -40,20 +53,10 @@ nav .navbar-nav .show > .nav-link {
   color: #039dff;
 }
 
-.hero-text {
-  justify-content: center;
-}
-
-.hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 header.hero-img {
   position: relative;
   height: 100vh;
-  background-image: url(../img/gaming.small.jpg);
+  background-image: url("../img/hero-small.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -82,10 +85,22 @@ header.hero-img .hero-text {
 header.hero-img .fa-chevron-down {
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   bottom: 20px;
   font-size: 30px;
   color: #fff;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -98,6 +113,6 @@ header.hero-img .fa-chevron-down {
 }
 @media (min-width: 1200px) {
   header.hero-img {
-    background-image: url(../img/gaming.big.jpg);
+    background-image: url("../img/hero-big.jpeg");
   }
 }/*# sourceMappingURL=main.css.map */
