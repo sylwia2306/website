@@ -6,26 +6,29 @@
 	padding: 0;
 }
 
+html {
+	scroll-padding-top: 74px;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #444;
 }
 
-.blue-text{
+.blue-text {
 	color: $main-color;
 }
 
-.shadow-bg{
-	background-color: rgba(0 0 0 0.8);
+.shadow-bg {
+	background-color: rgba(0 0 0.8);
 }
 
-.section-title{
+.section-title {
 	text-align: center;
 	text-transform: uppercase;
-
 }
 
-.underline{
+.underline {
 	margin: 0 auto 40px;
 	width: 60px;
 	height: 4px;
@@ -34,14 +37,14 @@ body {
 
 nav {
 	text-transform: uppercase;
-	transition: 0.6s;
+	transition: background-color 0.6s;
 	z-index: 5;
 
 	.navbar-toggler {
 		padding: 10px 15px;
 	}
 
-	.navbar-brand{
+	.navbar-brand {
 		font-weight: bold;
 	}
 
@@ -60,7 +63,7 @@ nav {
 	}
 }
 
-header.hero-img{
+header.hero-img {
 	position: relative;
 	height: 100vh;
 	background-image: url(../img/gaming.small.jpg);
@@ -70,21 +73,21 @@ header.hero-img{
 	color: $white;
 	z-index: 0;
 
-	h1{
+	h1 {
 		text-transform: uppercase;
 	}
 
-	.hero-shadow{
+	.hero-shadow {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(0,0,0,0.8);
+		background-color: rgba(0, 0, 0, 0.8);
 		z-index: -5;
 	}
 
-	.hero-text{
+	.hero-text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -92,7 +95,7 @@ header.hero-img{
 		height: 100%;
 	}
 
-	.fa-chevron-down{
+	.fa-chevron-down {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -117,25 +120,84 @@ header.hero-img{
 		font-size: 14px;
 	}
 
-	.aboutus-hover:hover{
-		color:$main-color;
+	.aboutus-hover{
+		transition: color .3s;
+	}
+
+	.aboutus-hover:hover {
+		color: $main-color;
 	}
 }
 
-@media(min-width: 768px){
-	.hero-text{
-		h1{
+.aboutus-hero{
+	position: relative;
+	background-image: url(../img/technology-640kb.jpg);
+	background-size: cover;
+	background-position: center;
+	color: $light-gray;
+	z-index: 0;
+
+.aboutus-shadow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -5;
+}
+.aboutus-hero-item{
+	margin: 10px 0;
+	i{
+		font-size: 36px;
+	}
+	.aboutus-hero-title{
+		font-size: 24px;
+	}
+}
+}
+
+.portfolio {
+	.carousel-item {
+		height: 600px;
+	}
+	.carousel-caption {
+		left: 0;
+		right: 0;
+		padding: 40px 0;
+		background-color: rgb(0, 0, 0, 0.8);
+	}
+	.carousel-indicators{
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-text {
+		h1 {
 			font-size: 42px;
 		}
 
-		p{
+		p {
 			font-size: 20px;
 		}
 	}
 }
 
-@media(min-width:1200px){
-	header.hero-img{
+
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 74px;
+	}
+
+	.aboutus-hero{
+		background-image: url(../img/technology-1280kb.jpg);
+	}
+}
+
+@media (min-width: 1200px) {
+	header.hero-img {
 		background-image: url(../img/gaming.big.jpg);
 	}
 }
