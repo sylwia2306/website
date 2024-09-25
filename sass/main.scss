@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use './animations' as *;
 
 * {
 	box-sizing: border-box;
@@ -13,6 +14,7 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: $bg-color;
+	overflow-x: hidden;
 }
 
 .blue-text {
@@ -329,8 +331,6 @@ header.hero-img {
 			}
 		}
 	}
-
-	
 }
 
 @media (min-width: 768px) {

@@ -17,13 +17,14 @@
 			rel="stylesheet"/>
 		<link rel="stylesheet" href="slick.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script
 			src="https://kit.fontawesome.com/20f53ce587.js"
 			crossorigin="anonymous"
 		></script>
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+	<body data-bs-spy="scroll" data-bs-target="#navId">
+		<nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3" id="navId">
 			<div class="container">
 				<a class="navbar-brand" href="#"
 					><i class="fa-solid fa-headset"></i>pro<span class="blue-text"
@@ -58,15 +59,15 @@
 
 		<header class="hero-img" id="home">
 			<div class="hero-text text-center p-2">
-				<h1>witajcie w pro<span class="blue-text">gamers</span></h1>
-				<p>W miejscu, gdzie gry tworzymy z pasją</p>
-				<a href="#aboutus" class="btn btn-outline-light mt-2 text-uppercase"
+				<h1 data-aos="fade-up" data-aos-delay="200">witajcie w pro<span class="blue-text">gamers</span></h1>
+				<p data-aos="fade-up" data-aos-delay="400">W miejscu, gdzie gry tworzymy z pasją</p>
+				<a data-aos="fade-up" data-aos-delay="600" href="#aboutus" class="btn btn-outline-light mt-2 text-uppercase"
 					>poznaj nas</a
 				>
 			</div>
 			<div class="hero-shadow"></div>
 
-			<a href="#aboutus"><i class="fa-solid fa-chevron-down"></i></a>
+			<a href="#aboutus"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
 		</header>
 
 		<main>
@@ -76,40 +77,42 @@
 					<div class="underline"></div>
 
 					<div class="row">
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						
+						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="100">
 							<p><i class="fa-solid fa-mobile-screen"></i></p>
 							<p class="aboutus-card-title mb-1">mobile gaming</p>
 							<p class="aboutus-card-text">
 								Tworzymy gry na urządzenia mobilne
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+					
+						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="200">
 							<p><i class="fas fa-desktop"></i></p>
 							<p class="aboutus-card-title mb-1">desktop gaming</p>
 							<p class="aboutus-card-text">Tworzymy gry na PC!</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="300">
 							<p><i class="fas fa-file-code"></i></p>
 							<p class="aboutus-card-title mb-1">najwyższe standardy</p>
 							<p class="aboutus-card-text">
 								Zachowujemy najwyższe standardy podczas pisania kodu.
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="400">
 							<p><i class="fas fa-paw"></i></p>
 							<p class="aboutus-card-title mb-1">kochamy zwierzęta!</p>
 							<p class="aboutus-card-text">
 								Wszystkie nasze gry są bezpieczne dla środowiska. 🙂
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="500">
 							<p><i class="fas fa-hamburger"></i></p>
 							<p class="aboutus-card-title mb-1">lubimy dobre jedzenie</p>
 							<p class="aboutus-card-text">
 								Lubimy dobrze zjeść przed przystąpieniem do naszych zadań.
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="600">
 							<p><i class="fas fa-glass-cheers"></i></p>
 							<p class="aboutus-card-title mb-1">świetne relacje</p>
 							<p class="aboutus-card-text">
@@ -337,45 +340,44 @@
 
 				<div class="container">
 					<div class="row text-center achievements-list">
-						<div class="col-md-6 col-lg-4 col-xl-2">
+						<div class="col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
 							<i class="fas fa-thumbs-up"></i>
 							<p class="achievements-number">100%</p>
 							<p class="achievements-text">zadowolonych klientów</p>
 						</div>
 										
-						<div class="col-md-6 col-lg-4 col-xl-2">
+						<div class="col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="50">
 							<i class="fas fa-trophy"></i>
 							<p class="achievements-number">37</p>
 							<p class="achievements-text">zdobytych nagród</p>
 						</div>
 					
-						<div class="col-md-6 col-lg-4 col-xl-2">
+						<div class="col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="200">
 							<i class="fas fa-user-friends"></i>
 							<p class="achievements-number">143</p>
 							<p class="achievements-text">pracowników</p>
 						</div>
 									
-						<div class="col-md-6 col-lg-4 col-xl-2">
+						<div class="col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="250">
 							<i class="fas fa-building"></i>
 							<p class="achievements-number">7</p>
 							<p class="achievements-text">nowoczesnych biur</p>
 						</div>				
 					
-						<div class="col-md-6 col-lg-4 col-xl-2">
+						<div class="col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
 							<i class="fas fa-dice"></i>
 							<p class="achievements-number">58</p>
 							<p class="achievements-text">stworzonych gier</p>
 						</div>
 					
-						<div class="col-md-6 col-lg-4 col-xl-2">
+						<div class="col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="300">
 							<i class="fas fa-share-alt"></i>
 							<p class="achievements-number">80.000</p>
 							<p class="achievements-text">fanów w social media</p>
 						</div>
-					
 					</div>
 				</div>
-				</section>
+			</section>
 
 				<section id="contact" class="contact py-5">
 					<h2 class="section-title">kontakt</h2>
@@ -430,7 +432,14 @@
 		<script src="jquery-3.7.1.min.js"></script>
 		<script src="slick.min.js"></script>	
 
-
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				startEvent:'DOMContentLoaded',
+				offset: 200,
+				once: true, 
+			});
+		</script>
 		<script src="./js/slick.js"></script>
 		<script src="./js/script.js"></script>
 	
